@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="truthordrink.HomePage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="DarkRed"
+               Padding="24">
+            <Label x:Name="TitleLabel"
+                   Text="Truth or Drink!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="36"/>
+        </Frame>
+
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Button x:Name="Spelen"
+                    Text="Spelen"
+                    Padding="100,25"/>
+            <Button x:Name="Spelers"
+                    Text="Spelers"
+                    Padding="100,25"
+                    Clicked="Spelers_Clicked"/>
+            <Button x:Name="MijnLijsten"
+                    Text="Mijn Lijsten"
+                    Padding="100,25"/>
+        </StackLayout>
+        
+        
+        
+    </StackLayout>
+    
+        
+</ContentPage>

@@ -4,21 +4,35 @@
              x:Class="truthordrink.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        
+        <Frame BackgroundColor="DarkRed"
+               Padding="24">
+            <Label x:Name="TitleLabel"
+                   Text="Truth or Drink!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="test veranderingen" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
 
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Center">
+            <Label x:Name="UsernameLabel"
+                   Text="Username"/>
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="mailadres hier"
+                   Keyboard="Email"/>
+            <Label x:Name="PasswordLabel"
+                   Text="Password"/>
+            <Entry x:Name="PasswordEntry"
+                   Placeholder="password hier"
+                   IsPassword="True"/>
+            <Button x:Name="LoginButton"
+                    Margin="0,50,0,0"
+                    Padding="20"
+                    Text="Login"
+                    Clicked="LoginButton_Clicked"/>
+        </StackLayout>
+
+    </StackLayout>
+    
 </ContentPage>
