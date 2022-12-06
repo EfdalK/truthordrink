@@ -21,5 +21,15 @@ namespace truthordrink
         {
             Navigation.PushAsync(new Spelers());
         }
+
+        private void Spelen_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Spelen());
+        }
+
+        private void MijnLijsten_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MijnLijsten());
+        }
     }
 }

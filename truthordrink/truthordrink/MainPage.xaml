@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.MainPage">
+             x:Class="truthordrink.MainPage"
+             BackgroundColor="DarkRed">
 
     <StackLayout>
         
@@ -17,15 +18,19 @@
         <StackLayout VerticalOptions="CenterAndExpand"
                      HorizontalOptions="Center">
             <Label x:Name="UsernameLabel"
-                   Text="Username"/>
+                   Text="Username"
+                   TextColor="White"/>
             <Entry x:Name="UsernameEntry"
                    Placeholder="mailadres hier"
-                   Keyboard="Email"/>
+                   Keyboard="Email"
+                   TextColor="White"/>
             <Label x:Name="PasswordLabel"
-                   Text="Password"/>
+                   Text="Password"
+                   TextColor="White"/>
             <Entry x:Name="PasswordEntry"
                    Placeholder="password hier"
-                   IsPassword="True"/>
+                   IsPassword="True"
+                   TextColor="White"/>
             <Button x:Name="LoginButton"
                     Margin="0,50,0,0"
                     Padding="20"
