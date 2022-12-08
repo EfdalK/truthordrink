@@ -2,26 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="truthordrink.MainPage"
-             BackgroundColor="DarkRed">
+             BackgroundColor="{StaticResource BackgroundColor}">
 
-    <StackLayout>
-        
-        <Frame BackgroundColor="DarkRed"
-               Padding="24">
-            <Label x:Name="TitleLabel"
-                   Text="Truth or Drink!"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"
-                   FontSize="36"/>
-        </Frame>
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="FillAndExpand">
+
+        <Image Source="todlogo.png" WidthRequest="280" HeightRequest="280"></Image>
 
         <StackLayout VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="Center">
+                     HorizontalOptions="FillAndExpand"
+                     Padding="40">
             <Label x:Name="UsernameLabel"
                    Text="Username"
                    TextColor="White"/>
             <Entry x:Name="UsernameEntry"
-                   Placeholder="mailadres hier"
+                   Placeholder="Username"
                    Keyboard="Email"
                    TextColor="White"/>
             <Label x:Name="PasswordLabel"
@@ -31,11 +26,27 @@
                    Placeholder="password hier"
                    IsPassword="True"
                    TextColor="White"/>
-            <Button x:Name="LoginButton"
+            
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Fill">
+                <Button x:Name="LoginButton"
                     Margin="0,50,0,0"
-                    Padding="20"
+                    Padding="20,20"
                     Text="Login"
-                    Clicked="LoginButton_Clicked"/>
+                    Clicked="LoginButton_Clicked"
+                    CornerRadius="10"/>
+                
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Don't have an account? " TextColor="Gray"/>
+                            <Span Text="Register" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+            </StackLayout>
+            
         </StackLayout>
 
     </StackLayout>

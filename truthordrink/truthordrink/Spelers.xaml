@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.Spelers">
+             x:Class="truthordrink.Spelers"
+             BackgroundColor="{StaticResource BackgroundColor}">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="DarkRed"
-               Padding="24">
-                <Label x:Name="TopText"
+            <Label x:Name="TitleLabel"
                    Text="Spelers"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    FontSize="36"/>
-            </Frame>
+
+            <Label Text="Voeg spelers toe: "/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

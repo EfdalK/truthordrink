@@ -1,21 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.Spelen">
+             x:Class="truthordrink.Spelen"
+             BackgroundColor="{StaticResource BackgroundColor}">
     <ContentPage.Content>
+        
         <StackLayout>
-            <Frame BackgroundColor="DarkRed"
-               Padding="24">
-                <Label x:Name="TopText"
-                   Text="Spelen"
+            
+            <Label x:Name="TitleLabel"
+                   Text="Truth or Drink!"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    FontSize="36"/>
-            </Frame>
+            
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="CenterAndExpand">
+                <Label Text="Choose Players:"/>
+                <Label Text="Choose List:"/>
+                <Label Text="Choose Points to win:"/>
 
-            <Button
-                Text="Begin"
-                BackgroundColor="DarkRed" TextColor="#FFFFFF"/>
+                <Button x:Name="SpelenButton"
+                        Text="Start"
+                        Padding="100,25"
+                        Style="{StaticResource Button1}"/>
+
+            </StackLayout>
+            
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

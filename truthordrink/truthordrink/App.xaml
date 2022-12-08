@@ -3,9 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="truthordrink.App">
     <Application.Resources>
-        
-        
-        
+        <ResourceDictionary>
+            <!--top navigation bar color-->
+            <Color x:Key="Primary">DarkRed</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+
+            <!--Background color for all pages-->
+            <Color x:Key="BackgroundColor">DarkRed</Color>
+            <Style TargetType="Page">
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+            </Style>
+
+            <Style x:Key="Button1" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="IndianRed"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+
+        </ResourceDictionary>
+
         
     </Application.Resources>
 </Application>

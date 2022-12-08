@@ -1,36 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.HomePage">
+             x:Class="truthordrink.HomePage"
+             BackgroundColor="{StaticResource BackgroundColor}">
 
     <StackLayout>
-
-        <Frame BackgroundColor="DarkRed"
-               Padding="24">
-            <Label x:Name="TitleLabel"
+        <Label x:Name="TitleLabel"
                    Text="Truth or Drink!"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    FontSize="36"/>
-        </Frame>
+        
 
         <StackLayout HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Button x:Name="Spelen"
                     Text="Spelen"
                     Padding="100,25"
+                    Style="{StaticResource Button1}"
                     Clicked="Spelen_Clicked"/>
             <Button x:Name="Spelers"
                     Text="Spelers"
                     Padding="100,25"
+                    Style="{StaticResource Button1}"
                     Clicked="Spelers_Clicked"/>
             <Button x:Name="MijnLijsten"
                     Text="Mijn Lijsten"
                     Padding="100,25"
+                    Style="{StaticResource Button1}"
                     Clicked="MijnLijsten_Clicked"/>
             <Button x:Name="FreePlay"
                     Text="Free Play"
-                    Padding="100,25"/>
+                    Padding="100,25"
+                    Style="{StaticResource Button1}"/>
         </StackLayout>
         
         
