@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="truthordrink.GameScreen"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#C0C32D"
+                     HorizontalOptions="End"
+                     VerticalOptions="Center">
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

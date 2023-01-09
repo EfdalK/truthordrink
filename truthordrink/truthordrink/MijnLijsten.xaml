@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="truthordrink.MijnLijsten"
              BackgroundColor="{StaticResource BackgroundColor}">
-    
+
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="TitleLabel"
@@ -12,8 +12,9 @@
                    TextColor="White"
                    FontSize="36"/>
 
-            <Label Text="Voeg lijst toe"/>
-
+            <Label Text="Geef hier een nieuwe vraag in."/>
+            <Entry x:Name="QuestionEntry" Placeholder="Maximum 200 tekens!"/>
+            <Button x:Name="SaveButton" Text="Save" Clicked="SaveButton_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>

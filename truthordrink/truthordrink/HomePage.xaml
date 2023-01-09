@@ -29,10 +29,6 @@
                     Padding="100,25"
                     Style="{StaticResource Button1}"
                     Clicked="MijnLijsten_Clicked"/>
-            <Button x:Name="FreePlay"
-                    Text="Free Play"
-                    Padding="100,25"
-                    Style="{StaticResource Button1}"/>
         </StackLayout>
         
         

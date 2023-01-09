@@ -17,6 +17,7 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
             </Style>
 
+            <!--Color for all buttons type 1-->
             <Style x:Key="Button1" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="IndianRed"/>
                 <Setter Property="TextColor" Value="White"/>

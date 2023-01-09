@@ -19,10 +19,11 @@
                 <Label Text="Choose List:"/>
                 <Label Text="Choose Points to win:"/>
 
-                <Button x:Name="SpelenButton"
+                <Button x:Name="StartButton"
                         Text="Start"
                         Padding="100,25"
-                        Style="{StaticResource Button1}"/>
+                        Style="{StaticResource Button1}"
+                        Clicked="StartButton_Clicked"/>
 
             </StackLayout>
             

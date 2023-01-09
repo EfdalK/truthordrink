@@ -10,16 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace truthordrink
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Spelen : ContentPage
+	public partial class GameScreen : ContentPage
 	{
-		public Spelen ()
+		public GameScreen ()
 		{
 			InitializeComponent ();
 		}
 
-        private void StartButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new GameScreen ());
-        }
+
     }
 }
