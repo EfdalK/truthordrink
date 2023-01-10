@@ -20,10 +20,12 @@ namespace truthordrink
 
         private async void SaveButton_Clicked(object sender, EventArgs e)
         {
-			Question question = new Question();
-			question.QuestionBody = QuestionEntry.Text;
+            Question question = new Question
+            {
+                QuestionBody = QuestionEntry.Text
+            };
 
-			SQLiteConnection sQLiteConnection = new SQLiteConnection(App.DatabaseLocation);
+            SQLiteConnection sQLiteConnection = new SQLiteConnection(App.DatabaseLocation);
 			sQLiteConnection.CreateTable<Question>();
 			int insertedRows = sQLiteConnection.Insert(question);
 			sQLiteConnection.Close();

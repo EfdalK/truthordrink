@@ -17,10 +17,6 @@ namespace truthordrink
             InitializeComponent();
         }
 
-        private void Spelers_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Spelers());
-        }
 
         private void Spelen_Clicked(object sender, EventArgs e)
         {
@@ -30,6 +26,11 @@ namespace truthordrink
         private void MijnLijsten_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MijnLijsten());
+        }
+
+        async void Logout_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }

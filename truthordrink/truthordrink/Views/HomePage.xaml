@@ -14,21 +14,22 @@
 
         <StackLayout HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
-            <Button x:Name="Spelen"
-                    Text="Spelen"
+            <Button x:Name="Play"
+                    Text="Play"
                     Padding="100,25"
                     Style="{StaticResource Button1}"
                     Clicked="Spelen_Clicked"/>
-            <Button x:Name="Spelers"
-                    Text="Spelers"
-                    Padding="100,25"
-                    Style="{StaticResource Button1}"
-                    Clicked="Spelers_Clicked"/>
-            <Button x:Name="MijnLijsten"
-                    Text="Mijn Lijsten"
+            <Button x:Name="MyLists"
+                    Text="My Lists"
                     Padding="100,25"
                     Style="{StaticResource Button1}"
                     Clicked="MijnLijsten_Clicked"/>
+            <Button x:Name="Logout"
+                    Text="Logout"
+                    Padding="100,25"
+                    Style="{StaticResource Button1}"
+                    Clicked="Logout_Clicked"
+                    />
         </StackLayout>
         
         
