@@ -5,23 +5,25 @@
     <Application.Resources>
         <ResourceDictionary>
             <!--top navigation bar color-->
-            <Color x:Key="Primary">DarkRed</Color>
+            <Color x:Key="Primary">darkorange</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
 
-            <!--Background color for all pages-->
-            <Color x:Key="BackgroundColor">DarkRed</Color>
-            <Style TargetType="Page">
-                <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
-            </Style>
 
             <!--Color for all buttons type 1-->
             <Style x:Key="Button1" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="IndianRed"/>
+                <Setter Property="BackgroundColor" Value="DarkOrange"/>
                 <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BorderColor" Value="White"/>
+                <Setter Property="FontSize" Value="30"/>
             </Style>
+
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True" >
+                <Setter Property="BackgroundImageSource" Value="alcoholBackground.jpg" />
+            </Style>
+
 
 
         </ResourceDictionary>

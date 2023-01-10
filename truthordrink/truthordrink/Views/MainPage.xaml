@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="truthordrink.MainPage"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             BackgroundImageSource="alcoholBackground.jpg">
 
     <StackLayout VerticalOptions="CenterAndExpand"
                  HorizontalOptions="FillAndExpand">
 
-        <Image Source="todlogo.png" WidthRequest="280" HeightRequest="280"></Image>
+        <Image Source="todlogo.png" WidthRequest="300" HeightRequest="350"></Image>
 
         <StackLayout VerticalOptions="CenterAndExpand"
                      HorizontalOptions="FillAndExpand"
@@ -18,29 +18,34 @@
             <Entry x:Name="UsernameEntry"
                    Placeholder="Enter username"
                    Keyboard="Email"
-                   TextColor="White"/>
+                   TextColor="Black"
+                   BackgroundColor="White"/>
             <Label x:Name="PasswordLabel"
                    Text="Password"
                    TextColor="White"/>
             <Entry x:Name="PasswordEntry"
                    Placeholder="Enter password"
                    IsPassword="True"
-                   TextColor="White"/>
+                   TextColor="Black"
+                   BackgroundColor="White"/>
             
             <StackLayout VerticalOptions="CenterAndExpand"
                          HorizontalOptions="Fill">
                 <Button x:Name="LoginButton"
                     Margin="0,50,0,0"
+                    BackgroundColor="DarkOrange"
+                    TextColor="White"
+                    FontAttributes="Bold"
                     Padding="20,20"
                     Text="Login"
                     Clicked="LoginButton_Clicked"
-                    CornerRadius="10"/>
+                    CornerRadius="50" BorderColor="#FFC28C" BorderWidth="1"/>
                 <Button x:Name="RegisterButton"
                     Margin="0,10,0,0"
                     Padding="20,20"
                     Text="Register"
                     Clicked="RegisterButton_Clicked"
-                    CornerRadius="10"/>
+                    CornerRadius="50"/>
                 
                 <!--<Label HorizontalOptions="Center">
                     <Label.FormattedText>

@@ -15,6 +15,8 @@ namespace truthordrink
         public HomePage()
         {
             InitializeComponent();
+
+            SetValue(NavigationPage.HasNavigationBarProperty, false);
         }
 
 

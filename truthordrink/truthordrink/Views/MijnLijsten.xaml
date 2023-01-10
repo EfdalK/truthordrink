@@ -1,21 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.MijnLijsten"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             x:Class="truthordrink.MijnLijsten">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="TitleLabel"
-                   Text="Lijsten"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"
-                   FontSize="36"/>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center" WidthRequest="350">
+            <StackLayout>
+                <Label x:Name="TitleLabel"
+                       Text="Lists"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="36"/>
 
-            <Label Text="Geef hier een nieuwe vraag in."/>
-            <Entry x:Name="QuestionEntry" Placeholder="Maximum 200 tekens!"/>
-            <Button x:Name="SaveButton" Text="Save" Clicked="SaveButton_Clicked"/>
-
+                <Label Text="Add a new question" TextColor="White"/>
+                <Entry x:Name="QuestionEntry" BackgroundColor="White" Placeholder="200 characters max" MaxLength="200"/>
+                <Button x:Name="SaveButton" Text="Save" Clicked="SaveButton_Clicked" Style="{StaticResource Button1}"/>
+            </StackLayout>
+            
+            <ListView x:Name="QuestionListView" ItemSelected="QuestionListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding QuestionBody}" TextColor="Red"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
         </StackLayout>
+
+
+        
     </ContentPage.Content>
 </ContentPage>

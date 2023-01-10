@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.Spelen"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             x:Class="truthordrink.Spelen">
     <ContentPage.Content>
         
         <StackLayout>
@@ -15,9 +14,9 @@
             
             <StackLayout HorizontalOptions="Center"
                          VerticalOptions="CenterAndExpand">
-                <Label Text="Choose Players:"/>
-                <Label Text="Choose List:"/>
-                <Label Text="Choose Points to win:"/>
+                <Label TextColor="White" Text="Choose Players:" FontSize="20"/>
+                <Label TextColor="White" Text="Choose List:" FontSize="20"/>
+                <Label TextColor="White" Text="Choose Points to win:" FontSize="20"/>
 
                 <Button x:Name="StartButton"
                         Text="Start"

@@ -42,6 +42,10 @@ namespace truthordrink.Views
 
                 if (result)
                     await Navigation.PushAsync(new MainPage());
+                else
+                {
+                    await Navigation.PushAsync(new MainPage());
+                }
             
             });
         }

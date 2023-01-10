@@ -32,15 +32,36 @@ namespace truthordrink
 
 			if(insertedRows > 0)
 			{
-				_ = DisplayAlert("gelukt!", "je vraag is goed toegevoegd aan de database.", "Ok");
+				_ = DisplayAlert("Added!", "Your question has been added to the database", "Ok");
 			}
 			else
 			{
-				_ = DisplayAlert("Ah, jammer! Er ging iets fout.", "je vraag is niet toegevoegd aan de database", "Ok");
+				_ = DisplayAlert("Error!", "Something went wrong.", "Ok");
 			}
 
 			await Navigation.PopAsync();
 
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            using (SQLiteConnection sQLiteConnection = new SQLiteConnection(App.DatabaseLocation))
+            {
+                sQLiteConnection.CreateTable<Question>();
+                List<Question> questions = sQLiteConnection.Table<Question>().ToList();
+				QuestionListView.ItemsSource = questions;
+            }
+        }
+
+        private void QuestionListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var selectedQuestion = QuestionListView.SelectedItem as Question;
+            if(selectedQuestion != null)
+            {
+                Navigation.PushAsync(new MijnLijsten());
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto-Regular")]
 namespace truthordrink
 {
     public partial class App : Application

@@ -1,32 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="truthordrink.HomePage"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             x:Class="truthordrink.HomePage">
 
-    <StackLayout>
-        <Label x:Name="TitleLabel"
-                   Text="Truth or Drink!"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"
-                   FontSize="36"/>
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Image Source="todlogo.png" WidthRequest="350" HeightRequest="350"></Image>
         
 
         <StackLayout HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Button x:Name="Play"
                     Text="Play"
-                    Padding="100,25"
+                    Padding="80,25"
                     Style="{StaticResource Button1}"
-                    Clicked="Spelen_Clicked"/>
+                    Clicked="Spelen_Clicked" FontFamily="Roboto-Regular"/>
             <Button x:Name="MyLists"
                     Text="My Lists"
-                    Padding="100,25"
+                    Padding="80,25"
                     Style="{StaticResource Button1}"
                     Clicked="MijnLijsten_Clicked"/>
             <Button x:Name="Logout"
                     Text="Logout"
-                    Padding="100,25"
+                    Padding="80,25"
                     Style="{StaticResource Button1}"
                     Clicked="Logout_Clicked"
                     />
