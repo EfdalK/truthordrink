@@ -36,7 +36,7 @@
                                x:Name="EntryUsername"/>
                     </StackLayout>
                     <StackLayout Grid.Row="1">
-                        <Label x:Name="UsernameLabel"
+                        <Label x:Name="PasswordLabel"
                                Text="Password"
                                TextColor="White"/>
                         <Entry Placeholder="Enter password"
