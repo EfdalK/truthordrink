@@ -17,7 +17,7 @@
                 <Setter Property="BackgroundColor" Value="DarkOrange"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="BorderColor" Value="White"/>
-                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontSize" Value="25"/>
             </Style>
 
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True" >

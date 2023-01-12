@@ -5,26 +5,31 @@
 
     <StackLayout VerticalOptions="CenterAndExpand">
         <Image Source="todlogo.png" WidthRequest="350" HeightRequest="350"></Image>
-        
+
 
         <StackLayout HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Button x:Name="Play"
                     Text="Play"
-                    Padding="80,25"
+                    Padding="75,20"
                     Style="{StaticResource Button1}"
                     Clicked="Spelen_Clicked" FontFamily="Roboto-Regular"/>
             <Button x:Name="MyLists"
                     Text="My Lists"
-                    Padding="80,25"
+                    Padding="75,20"
                     Style="{StaticResource Button1}"
                     Clicked="MijnLijsten_Clicked"/>
+            <Button x:Name="DrinkPage"
+                    Text="Drinks"
+                    Padding="75,20"
+                    Style="{StaticResource Button1}"
+                    Clicked="DrinkPage_Clicked"/>
             <Button x:Name="Logout"
                     Text="Logout"
-                    Padding="80,25"
+                    Padding="75,20"
                     Style="{StaticResource Button1}"
-                    Clicked="Logout_Clicked"
-                    />
+                    BackgroundColor="OrangeRed"
+                    Clicked="Logout_Clicked"/>
         </StackLayout>
         
         
